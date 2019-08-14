@@ -17,9 +17,9 @@ ul {
 	padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
-a:active, a:hover, a{
-  text-decoration: none;
-}
+a:active, a:hover, a{ text-decoration: none;}
+
+button, button:active, button:focus { outline: none; border: none;}
 
 header{
 	background: no-repeat url(../img/header.png) white;
@@ -165,6 +165,7 @@ header{
 .title{
 	padding-top: 70px;
 	padding-bottom: 60px;
+
 	h2{
 		font-weight: bold;
 		color: @dark-blue;
@@ -186,14 +187,79 @@ header{
 #install{
 	margin-top: 70px;
 	background-color: @light-gray;
+
+	button{
+	  width: 256px;
+	  height: 48px;
+	  border-radius: 20px;
+	  font-size: 15px;
+	  font-weight: bold;
+	  margin-right: 20px;
+	}
+
+	#try{
+		color: white;
+		background-color: @green-blue;
+	}
+
+	#tariff{
+		color: @dark-blue;
+		border: solid 1px @dark-blue;
+		background-color: transparent;
+	}
 }
 
 #simple-install{
-	p{
-		color: @gray;
-		font-size: 16px;
+
+	.install{
+		display: inline-flex;
+
+		.install-item{
+			margin-right: 145px;
+
+			a {
+				color: @green-blue;
+				font-size: 18px;
+				text-decoration: underline;
+			}
+		}
+
+		#install-01, #install-02{
+			width: 100px; height: 120px;
+			margin-left: -40px;
+			margin-bottom: 26px;
+		}
+
+		#install-01{background: url('../img/sprites/installation.png') -126px;}
+		#install-02{background: url('../img/sprites/installation.png') -10px;}
 	}
 }
+
+#html-install{
+	background-color: @light-gray;
+}
+	.install-list{
+		margin-top: 0;
+
+		li{
+			list-style-type: disc;
+			//list-style-position: inside;
+			color: @dark-blue;
+			font-size: 24px;
+			margin-left: 22px;
+		}
+
+		a{
+			color: @green-blue;
+			text-decoration: underline;
+		}
+
+		p{
+			color: @gray;
+			font-size: 16px;
+			//margin-left: 33px;
+		}
+	}
 
 @media screen and (max-width: 992px) {
 	header{
@@ -235,6 +301,8 @@ header{
 			}
 	}
 }
+
+@media screen and (max-width: 829px) {}
 
 
 
