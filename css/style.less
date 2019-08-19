@@ -2,22 +2,28 @@
 @green-blue: #2cd3b8;
 @gray: #74757b;
 @light-gray: #eff4f4;
+@footer-gray: #c0c3d3;
 
-@font-face {
+
+body{
+	margin: 0;
 	font-family: 'Ubuntu', sans-serif;
-	font-style: normal;
+	overflow-x: hidden;
 }
 
 li {
-    list-style-type: none; /* Убираем маркеры */
+    list-style-type: none; 
 }
 
 ul {
-	margin-left: 0; /* Отступ слева в браузере IE и Opera */
-	padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+	margin-left: 0; 
+	padding-left: 0; 
 }
 
-a:active, a:hover, a{ text-decoration: none;}
+a:active, a:hover, a{ 
+	color: @green-blue;
+	text-decoration: underline;
+}
 
 button, button:active, button:focus { outline: none; border: none;}
 
@@ -27,7 +33,6 @@ header{
 	position:fixed;
     left: 0;
     top: 0;
-    width:100%;
    	height: 70px;
     z-index: 100;
     width: 100%;
@@ -65,10 +70,11 @@ header{
 	    	li {
     			margin: 0 1rem;
 
-    			a{
+				a:active, a:hover, a{ 
 					color:@dark-blue;
 					font-size: 17px;
-				}	
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -184,23 +190,23 @@ header{
 	padding-bottom: 67px;
 }
 
-#install{
-	margin-top: 70px;
-	background-color: @light-gray;
-
-	button{
+.webim-button{
 	  width: 256px;
 	  height: 48px;
 	  border-radius: 20px;
 	  font-size: 15px;
 	  font-weight: bold;
 	  margin-right: 20px;
-	}
+}
 
-	#try{
-		color: white;
-		background-color: @green-blue;
-	}
+#try{
+	color: white;
+	background-color: @green-blue;
+}
+
+#install{
+	margin-top: 70px;
+	background-color: @light-gray;
 
 	#tariff{
 		color: @dark-blue;
@@ -215,7 +221,7 @@ header{
 		display: inline-flex;
 
 		.install-item{
-			margin-right: 145px;
+			margin-right: 40%;
 
 			a {
 				color: @green-blue;
@@ -243,7 +249,6 @@ header{
 
 		li{
 			list-style-type: disc;
-			//list-style-position: inside;
 			color: @dark-blue;
 			font-size: 24px;
 			margin-left: 22px;
@@ -257,9 +262,227 @@ header{
 		p{
 			color: @gray;
 			font-size: 16px;
-			//margin-left: 33px;
 		}
 	}
+
+#after-install{
+	background-color: @light-gray;
+
+	.after-install-steps{
+		margin-bottom: 50px;
+
+		p{
+			color: @dark-blue;
+			font-size: 18px;
+
+			span{
+				font-weight: bold;
+				font-size: 24px;
+			}
+		}
+
+		td{
+			height: 96px;
+		}
+
+		.after-install-step{
+			width: 74px;
+  			height: 74px;
+  			border-radius: 50%;
+  			margin-right: 30px;
+		}
+	}
+
+	#test{
+		background-color: @dark-blue;
+		color: white;
+	}
+	
+	#step1 {
+	    background: url('../img/sprites/steps.png') @green-blue 64px 19px;
+	}
+	#step2 {
+	    background: url('../img/sprites/steps.png') @green-blue 66px 78px;
+	}
+
+	#step3 {
+	    background: url('../img/sprites/steps.png') @green-blue 10px 10px;
+	}
+	#step4 {
+	    background: url('../img/sprites/steps.png') @green-blue -45px -91px;
+	}
+	#step5 {
+	    background: url('../img/sprites/steps.png') @green-blue 10px 64px;
+	}
+	#step6 {
+	    background: url('../img/sprites/steps.png') @green-blue 126px 79px;
+	}
+}
+
+#channels{
+	.title{
+		p{
+			color: @dark-blue;
+		}
+	}
+
+	.channel-list{
+		display: flex;
+		flex-wrap: wrap;
+
+		.channel{	
+			min-width: 300px;
+			display: table;
+			margin-bottom: 40px;
+
+			.ch-img{
+				height: 50px;
+				width: 46px;
+				margin-right: 20px;
+			}
+
+			a{
+				display: table-cell;
+  				vertical-align: middle;
+  				width: 100%;
+			}
+		}
+	}
+
+	#ch1{background:url('../img/sprites/channels.png') -6px -2px;}
+	#ch2{background:url('../img/sprites/channels.png') 114px -67px;}
+	#ch3{background:url('../img/sprites/channels.png') 54px 114px;}
+	#ch4{background:url('../img/sprites/channels.png') 114px -6px;}
+	#ch6{background:url('../img/sprites/channels.png') -6px -67px;}
+	#ch5{background:url('../img/sprites/channels.png') -6px 57px;}
+	#ch7{background:url('../img/sprites/channels.png') 54px -6px;}
+}
+
+footer{
+    background-color: @dark-blue;
+    overflow-x: hidden;
+
+    a:active, a:hover, a{ 
+		text-decoration: none;
+		color: white;
+	}
+
+    .footer-container{
+		width: 100%;
+	    margin: 0 auto;  
+	    min-height: 191px;
+	    padding: 50px 15px;
+    
+    	.fs-block {
+		    float: left;
+		    margin-right: 2%;
+		    padding: 0;
+		    box-sizing: border-box;
+		}
+
+	    .flogo{
+	    	width: 24%;
+
+	    	.falogo {
+			    width: 100%;
+			    height: 43px;
+			    box-sizing: border-box;
+			    display: block;
+			    text-decoration: none;
+			    padding: 5px 0;
+			    margin-bottom: 15px;
+			    background:  5% / 55% 50% no-repeat url(../img/logo_webim_footer.svg);
+			    background-size: 149px 173px
+			}
+
+			p {
+			    font-size: .875rem;
+			    line-height: 1.125rem;
+			    color:@footer-gray;
+			}
+	    }
+
+	    .fphones_adress {
+		    width: 40%;
+
+		    .fgphone {
+			    width: 100%;
+			    padding: 10px 0 10px 40px;
+			    font-size: 1.5rem;
+			    line-height: 1.5rem;
+			    font-weight: bold;
+			    color: #fff;
+			    background: url('../img/footer_phone.svg') no-repeat 0 50%;
+			    background-size: 28px 28px;
+			    margin-bottom: 10px;
+			}
+
+			.fphone {
+			    width: 100%;
+			    font-size: 1.25rem;
+			    line-height: 1.25rem;
+			    font-weight: bold;
+			    color: white;
+			    margin-bottom: 7px;
+			}
+
+			.fadress {
+			    width: 100%;
+			    font-size: 1rem;
+			    line-height: 1rem;
+			    font-weight: 300;
+			    color: @footer-gray;
+			    margin-bottom: 25px;
+			}
+		}
+
+		.fmails_social {
+		    width: 32%;
+		    margin-right: 0;
+
+		    .fmail {
+			    width: 100%;
+			    display: block;
+			    font-size: 1rem;
+			    line-height: 1.5rem;
+			    font-weight: bold;
+			    color: white;
+			}
+
+			.jtime {
+			    margin: 10px 0 15px;
+			    font-size: 1rem;
+			    line-height: 1rem;
+			    font-weight: 300;
+			    color: @footer-gray;
+			}
+
+			.fsocial {
+			    width: 100%;
+			    height: 24px;
+
+			    .fvk-link {
+				    background: url('../img/vk_footer.svg') no-repeat 50% 50%;
+				    background-size: 24px 24px;
+				}
+
+				.ffb-link {
+				    background: url('../img/fb_footer.svg') no-repeat 50% 50%;
+				    background-size: 24px 24px;
+				}
+
+				.youtube-link {
+				    background: url('../img/youtube-symbol.svg') no-repeat 50% 50%;
+				    background-size: 20px 20px;;
+				}
+				.ftelegram-link {
+				    background: url('../img/logo-telegram.svg') no-repeat 50% 50%;
+				    background-size: 20px 20px;;
+				}
+			}
+		}
+	}	
+}
 
 @media screen and (max-width: 992px) {
 	header{
@@ -302,50 +525,26 @@ header{
 	}
 }
 
-@media screen and (max-width: 829px) {}
+@media screen and (max-width: 829px) {
+	.webim-button{
+	  margin-bottom: 20px;
+}
+
+	footer{
+	    .footer-container{
+		   .flogo .falogo {
+				display: none;
+			}
+
+		    .fphones_adress {
+			    display: none;
+			}
+
+			.fmails_social {
+				display: none;
+			}
+		}	
+	}
+}
 
 
-
-// .bg-2 {
-//     width: 96px; height: 106px;
-//     background: url('css_sprites.png') -10px -10px;
-// }
-// .bg-1 {
-//     width: 91px; height: 104px;
-//     background: url('css_sprites.png') -126px -10px;
-// }
-
-// .bg-s5 {
-//     width: 32px; height: 37px;
-//     background: url('css_sprites.png') -10px -66px;
-// }
-
-// x
-// .bg-s2 {
-//     width: 29px; height: 23px;
-//     background: url('css_sprites.png') -126px -55px;
-// }
-
-// x
-// .bg-s1 {
-//     width: 35px; height: 25px;
-//     background: url('css_sprites.png') -126px -10px;
-// }
-
-// x
-// .bg-s3 {
-//     width: 36px; height: 36px;
-//     background: url('css_sprites.png') -10px -10px;
-// }
-
-// x
-// .bg-s6 {
-//     width: 32px; height: 29px;
-//     background: url('css_sprites.png') -66px -56px;
-// }
-
-// x
-// .bg-s4 {
-//     width: 40px; height: 26px;
-//     background: url('css_sprites.png') -66px -10px;
-// }
