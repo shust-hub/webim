@@ -5,46 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webim</title>
-   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
    	<link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+    <!-- Хедер -->
     	<header>
     		<div class="head-container">
-    				<a href="#" id = "toggle" class="nav-opener" onclick="myFunction()"><span></span></a>
-    				<nav id="nav" class="head-nav">
-    					<ul id="left-ul">
-    						<li>
-    							<a href="#">ВХОД</a>
-    						</li>
-    						<li>
-    							<a href="#">РЕГИСТРАЦИЯ</a>
-    						</li>
-    					</ul>
-    					<ul id="right-ul">
-    						<li>
-    							<a href="#">ВОЗМОЖНОСТИ</a>
-    						</li>
-    						<li>
-    							<a href="#">ТАРИФЫ</a>
-    						</li>
-    						<li>
-    							<a href="#">ПАРТНЕРАМ</a>
-    						</li>
-    						<li>
-    							<a href="#">ПОМОЩЬ</a>
-    						</li>
-    					</ul>
-    				</nav>
-    				<div class="logo">
-    					<a href="#"><img src="img/logo_webim.svg" alt="webim-logo" width="130" height="50"></a>
-    				</div>
+    			<!-- тогглер -->
+				<a href="#" id = "toggle" class="nav-opener" onclick="myFunction()"><span></span></a>
+				<!-- верхняя навигация -->
+				<nav id="nav" class="head-nav">
+					<ul id="left-ul">
+						<li>
+							<a href="#">ВХОД</a>
+						</li>
+						<li>
+							<a href="#">РЕГИСТРАЦИЯ</a>
+						</li>
+					</ul>
+					<ul id="right-ul">
+						<li>
+							<a href="#">ВОЗМОЖНОСТИ</a>
+						</li>
+						<li>
+							<a href="#">ТАРИФЫ</a>
+						</li>
+						<li>
+							<a href="#">ПАРТНЕРАМ</a>
+						</li>
+						<li>
+							<a href="#">ПОМОЩЬ</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- лого -->
+				<div class="logo">
+					<a href="/"><img src="img/logo_webim.svg" alt="webim-logo" width="130" height="50"></a>
+				</div>
     		</div>
     	</header>
-    	<!-- Установка -->
-    	<section id="install">
+
+    	<!-- Установка WEBIM -->
+    	<section id="install-webim">
     		<div class="container">
     			<div class="title">
     				<h2>УСТАНОВКА WEBIM</h2>
@@ -52,11 +56,11 @@
     				Вы можете установить онлайн-консультант Webim на ваш сайт и протестировать <br>
     				его в течение 7 дней бесплатно.</p>
     			</div>
-				<button class="webim-button" id ="try">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+				<button class="webim-button">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
 				<button class="webim-button" id ="tariff">ТАРИФЫ</button>
     		</div>	
     	</section>
-    	<!-- -------!Установка -->
+
     	<!-- Простая установка -->
     	<section id="simple-install">
     		<div class="container">
@@ -64,19 +68,20 @@
     				<h2>ПРОСТАЯ УСТАНОВКА</h2>
     				<p>Установка онлайн-консультанта займёт Webim не более 15 минут</p>
     			</div>
-    			<div class="install">
-    				<div class="install-item">
-    					<div id="install-01" class="install-item-img"></div>
+    			<div class="simple-install">
+    				<div class="simple-install-item">
+    					<div id="install-01"></div>
     					<a href="#">Регистрация</a>
     				</div>
-    				<div class="install-item">
-    					<div id="install-02" class="install-item-img"></div>
+    				<div class="simple-install-item">
+    					<div id="install-02"></div>
     					<a href="#">Установка HTML-кода</a>
     				</div>
     			</div>
     		</div>	
     	</section>
-    	<!-- -------!Установка -->
+
+    	<!-- УСТАНОВКА HTML-КОДА -->
     	<section id ="html-install">
     		<div class="container">
     			<div class="title">
@@ -106,7 +111,8 @@
 	    		</ul>
     		</div>
     	</section>
-
+		
+		<!-- УСТАНОВКА ПРИЛОЖЕНИЯ -->
     	<section id ="app-install">
     		<div class="container">
     			<div class="title">
@@ -141,111 +147,160 @@
     		</div>
     	</section>
 		
+		<!-- ПОСЛЕ УСТАНОВКИ -->
 		<section id="after-install">
 			<div class="container">
 				<div class="title">
 					<h2>ЧТО ВАС ЖДЕТ ПОСЛЕ УСТАНОВКИ</h2>
 					<p>Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет</p>
 				</div>
-				<table class="after-install-steps">
+				<table class="after-install">
 					<tr>
-						<td><div class="after-install-step" id="step1"></div></td>
-						<td><p><span>Шаг 1.</span>	Создание учетной записи компании и администратора </p></td>
+						<td>
+							<div class="after-install-step" id="step1"></div>
+						</td>
+						<td>
+							<p><span>Шаг 1.</span>	Создание учетной записи компании и администратора </p>
+						</td>
 					</tr>
 					<tr>
-						<td><div class="after-install-step" id="step2"></div></td>
-						<td><p><span>Шаг 2.</span> Активация учетной записи   </p></td>
+						<td>
+							<div class="after-install-step" id="step2"></div>
+						</td>
+						<td>
+							<p><span>Шаг 2.</span> Активация учетной записи   </p>
+						</td>
 					</tr>
 					<tr>
-						<td><div class="after-install-step" id="step3"></div></td>
-						<td><p><span>Шаг 3.</span> Начальная настройка</p></td>
+						<td>
+							<div class="after-install-step" id="step3"></div>
+						</td>
+						<td>
+							<p><span>Шаг 3.</span> Начальная настройка</p>
+						</td>
 					</tr>
 					<tr>
-						<td><div class="after-install-step" id="step4"></div></td>
-						<td><p><span>Шаг 4.</span> Установка кнопки Webim на сайт </p></td>
+						<td>
+							<div class="after-install-step" id="step4"></div>
+						</td>
+						<td>
+							<p><span>Шаг 4.</span> Установка кнопки Webim на сайт </p>
+						</td>
 					</tr>
 					<tr>
-						<td><div class="after-install-step" id="step5"></div></td>
-						<td><p><span>Шаг 5.</span> Регистрация оператора </p></td>
+						<td>
+							<div class="after-install-step" id="step5"></div>
+						</td>
+						<td>
+							<p><span>Шаг 5.</span> Регистрация оператора </p>
+						</td>
 					</tr>
 					<tr>
-						<td><div class="after-install-step" id="step6"></div></td>
-						<td><p><span>Шаг 6.</span> Тест сервиса</p></td>
+						<td>
+							<div class="after-install-step" id="step6"></div>
+						</td>
+						<td>
+							<p><span>Шаг 6.</span> Тест сервиса</p>
+						</td>
 					</tr>
 				</table>
-				<button class="webim-button" id ="try">ВСЕ ВОЗМОЖНОСТИ</button>
+				<button class="webim-button">ВСЕ ВОЗМОЖНОСТИ</button>
 				<button class="webim-button" id ="test">ПРОТЕСТИРОВАТЬ БЕСПЛАТНО</button>
 			</div>
 		</section>
-
+		
+		<!-- Интеграция других каналов -->
 		<section id ="channels">
 			<div class="container">
 				<div class="title">
 					<p>Webim – это не только онлайн-консультант. Интегрируйте и другие каналы, <br>
 					чтобы клиенты могли обращаться к вам любым удобным способом		</p>
 				</div>
-				<div class="channel-list">
-					<div class="channel">
-						<div class="ch-img" id="ch1"></div>
+				<div class="channel">
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch1"></div>
 						<a href="#">Социальные сети</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch2"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch2"></div>
 						<a href="#">Форма обратной связи</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch3"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch3"></div>
 						<a href="#">Чат в вашем мобильном <br> приложении</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch4"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch4"></div>
 						<a href="#">Мессенджеры</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch5"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch5"></div>
 						<a href="#">Яндекс.Диалоги</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch6"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch6"></div>
 						<a href="#">Электронная почта</a>
 					</div>
-					<div class="channel">
-						<div class="ch-img" id="ch7"></div>
+					<div class="channel-item">
+						<div class="channel-item-img" id="ch7"></div>
 						<a href="#">Чат-боты</a>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
+		<!-- ФУТЕР -->
     	<footer>
     		<div class="footer-container">
+    			<!-- лого -->
     			<div class="fs-block flogo">
 						<a class="falogo" href="/"></a>
-						<p><span itemprop="name">Webim</span> 2008-2019 <br>© Все права защищены</p>
+						<p>
+							<span itemprop="name">Webim</span> 2008-2019 <br>© Все права защищены
+						</p>
 				</div>
-					<div class="fs-block fphones_adress">
-						<div class="fgphone"><a href="tel:+78005504125" itemprop="telephone">+7 (800) 550 41 25</a></div>
-						<div class="fphone"><a href="tel:+74952302831" itemprop="telephone">+7 (495) 230 28 31</a></div>
-						<div class="fadress" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">Серебряническая набережная, 29</span></div>
-						<div class="fphone"><a href="tel:+78122401331" itemprop="telephone">+7 (812) 240 13 31</a></div>
-						<div class="fadress" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">Санкт-Петербург</span>, <span itemprop="streetAddress">Большой пр. ПС, д. 18, офис 501</span></div>
+				<!-- адрес и телефон -->
+				<div class="fs-block fphones_adress">
+					<div class="fgphone">
+						<a href="tel:+78005504125" itemprop="telephone">+7 (800) 550 41 25</a>
 					</div>
-					<div class="fs-block fmails_social">
-						<a class="fmail" href="mailto:contact@webim.ru"><span itemprop="email">contact@webim.ru</span></a>
-						<a class="fmail" href="mailto:sales@webim.ru">sales@webim.ru</a>
-						<div class="jtime"><span itemprop="openingHours" content="Mo-Fr 10:00-18:00">понедельник-пятница 10:00-18:00</span></div>
-						<div class="fsocial">
-						    <a class="fvk-link" href="https://vk.com/webim_online_konsultant" target="_blank"></a>
-							<a class="ffb-link" href="https://www.facebook.com/webim.ru" target="_blank"></a>
-						    <a href="https://www.youtube.com/channel/UCtXz4SyPYv0pr4n4InKCweQ" target="_blank" class="youtube-link"></a>
-						    <a href="https://t.me/Webimru_bot?info" target="_blank" class="ftelegram-link"></a>
-						</div>
+					<div class="fphone">
+						<a href="tel:+74952302831" itemprop="telephone">+7 (495) 230 28 31</a>
 					</div>
+					<div class="fadress" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+						<span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">Серебряническая набережная, 29</span>
+					</div>
+					<div class="fphone">
+						<a href="tel:+78122401331" itemprop="telephone">+7 (812) 240 13 31</a>
+					</div>
+					<div class="fadress" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+						<span itemprop="addressLocality">Санкт-Петербург</span>, <span itemprop="streetAddress">Большой пр. ПС, д. 18, офис 501</span>
+					</div>
+				</div>
+				<!-- почта и социальные сети -->
+				<div class="fs-block fmails_social">
+					<a class="fmail" href="mailto:contact@webim.ru">
+						<span itemprop="email">contact@webim.ru</span>
+					</a>
+					<a class="fmail" href="mailto:sales@webim.ru">sales@webim.ru</a>
+					<div class="jtime">
+						<span itemprop="openingHours" content="Mo-Fr 10:00-18:00">понедельник-пятница 10:00-18:00</span>
+					</div>
+
+					<div class="fsocial">
+					    <a class="fvk-link" href="https://vk.com/webim_online_konsultant" target="_blank"></a>
+						<a class="ffb-link" href="https://www.facebook.com/webim.ru" target="_blank"></a>
+					    <a href="https://www.youtube.com/channel/UCtXz4SyPYv0pr4n4InKCweQ" target="_blank" class="youtube-link"></a>
+					    <a href="https://t.me/Webimru_bot?info" target="_blank" class="ftelegram-link"></a>
+					</div>
+				</div>
     		</div>
     	</footer>
+
+
+
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="js/jquery.mask.js"></script>
       <script src="js/script.js"></script>
 
